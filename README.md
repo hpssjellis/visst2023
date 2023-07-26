@@ -6,3 +6,33 @@ https://hpssjellis.github.io/visst2023/public/index.html
 
 
 
+Send me your URL as an issue!
+
+Links you might find interesting
+
+For the motion assignment you can use your cell phone accelerometer and this static webpage I made
+
+https://hpssjellis.github.io/tinyMLjs/public/index.html
+
+
+My grade 12 computer programming in javascript page
+
+https://github.com/hpssjellis/high-school-javascript-game-dev-assignment-images
+
+My Robtos course
+https://github.com/hpssjellis/maker100
+
+My Huggingface examples
+
+https://hpssjellis.github.io/my-examples-of-huggingfacejs/public/index.html
+
+or use http://huggingface.co/chat
+
+
+
+
+
+
+
+
+
