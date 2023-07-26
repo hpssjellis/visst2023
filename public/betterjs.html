@@ -1,0 +1,12 @@
+        <input type="text" value="7" id="myText">
+        <div id="myDiv">...</div>
+        <input type="button" value="in-out" onclick="{
+          let myTemp = ''  // an empty variable
+          let myValue = parseInt(document.getElementById('myText').value);
+          for (myLoop =0; myLoop < myValue; myLoop++){
+              if (myLoop > 4) {
+                   myTemp += myLoop + '<br>'
+              }   
+          }
+          document.getElementById('myDiv').innerHTML = myTemp;
+        }">
