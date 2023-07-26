@@ -44,7 +44,7 @@ or use http://huggingface.co/chat
 
 ###  Ansel   https://coconana9010.github.io/VISST-2023-CAMP/public/
 
-###  max  https://maxbiz100.github.io/SuperAI/public/index.html
+###  Max  https://maxbiz100.github.io/SuperAI/public/index.html
 
 ###  Koen  https://ppap9264.github.io/visst2023koen/public/index.html
 
