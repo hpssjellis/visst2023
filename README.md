@@ -10,9 +10,14 @@ Send me your URL as an issue!
 
 Links you might find interesting
 
-For the motion assignment you can use your cell phone accelerometer and this static webpage I made
+For the motion assignment you can use your cell phone accelerometer and this static webpage I made here is the main index
 
 https://hpssjellis.github.io/tinyMLjs/public/index.html
+
+here is the best motion page 
+
+https://hpssjellis.github.io/tinyMLjs/public/acceleration/a00-best-acceleration.html
+
 
 
 My grade 12 computer programming in javascript page
