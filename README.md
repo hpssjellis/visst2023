@@ -50,7 +50,7 @@ or use http://huggingface.co/chat
 
 ### Lincoln https://thyssenkrupp234.github.io/VISST-2023-lincoln/public/index.html
 
-### Kenji   https://github.com/HonorablePentagon/honorablep
+### Kenji   https://honorablepentagon.github.io/honorablep/public/index.html
 
 ### Andrew https://snare555.github.io/VISST2023/public/
 
