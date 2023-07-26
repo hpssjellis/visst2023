@@ -35,13 +35,13 @@ or use http://huggingface.co/chat
 
 
 
-# Arush    https://arushyadavilli.github.io/visst-2023/public/index.html
+### Arush    https://arushyadavilli.github.io/visst-2023/public/index.html
 
-# Ansel   https://coconana9010.github.io/VISST-2023-CAMP/public/
+###  Ansel   https://coconana9010.github.io/VISST-2023-CAMP/public/
 
-# max  https://maxbiz100.github.io/SuperAI/public/index.html
+###  max  https://maxbiz100.github.io/SuperAI/public/index.html
 
-#Koen  https://ppap9264.github.io/visst2023koen/public/index.html
+###  Koen  https://ppap9264.github.io/visst2023koen/public/index.html
 
 
 
