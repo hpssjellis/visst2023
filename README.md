@@ -98,10 +98,26 @@ C Classes (all the above as one thing)
 
 
 
-Code update
+Code update called ```betterjs.html```
 
 ```
+        <input type="text" value="7" id="myText">  <!- For input -->
 
+        <div id="myDiv">...</div>   <!- For output -->
+
+        <input type="button" value="in-out" onclick="{  // event
+          let myTemp = ''  // an empty variable
+          let myValue = parseInt(document.getElementById('myText').value);  // input to a variable
+          for (myLoop =0; myLoop < myValue; myLoop++){   // Loop
+              if (myLoop > 4) {   // Decision
+                   myTemp += myLoop + '<br>'
+              }   
+          }
+          document.getElementById('myDiv').innerHTML = myTemp;  // Output to a webpage element
+        }">
+
+
+The only thing missing from this code is Objects, Arrays and Classes!
 
 ```
 
