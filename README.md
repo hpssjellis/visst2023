@@ -85,16 +85,16 @@ Lincoln's code
 
 So let's update this simplejs.html webpage with all the VIDEO FLAC Abilities (except O and C)
 
-V variables
-I input output
-D decisions (if statements)
-E Events (onclick)
-O Objects (structs are named variables)
-
-F Functions (named chuncks of code)
-L Loops (repeating code)
-A Arrays (numbered variables)
-C Classes (all the above as one thing)
+V variables  
+I input output  
+D decisions (if statements)  
+E Events (onclick)  
+O Objects (structs are named variables)  
+   
+F Functions (named chuncks of code)  
+L Loops (repeating code)  
+A Arrays (numbered variables)  
+C Classes (all the above as one thing)  
 
 
 
