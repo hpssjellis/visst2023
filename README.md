@@ -48,7 +48,7 @@ or use http://huggingface.co/chat
 
 ###  Koen  https://ppap9264.github.io/visst2023koen/public/index.html
 
-### Lincoln https://thyssenkrupp234.github.io/VISST-2023-lincoln
+### Lincoln https://thyssenkrupp234.github.io/VISST-2023-lincoln/public/index.html
 
 
 
