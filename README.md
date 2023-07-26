@@ -54,3 +54,24 @@ or use http://huggingface.co/chat
 
 
 
+Lincoln's code
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SimpleJS</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <input type="text" value="hi" id="myText">
+        <div id="myDiv">...</div>
+        <input type="button" value="in-out" onclick="{
+            let myValue = document.getElementById('myText').value;
+            document.getElementById('myDiv').innerHTML = myValue;
+        }">
+    </body>
+</html>
+```
