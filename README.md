@@ -89,7 +89,7 @@ or use http://huggingface.co/chat
 
 # Thursday coding
 
-So let's update this simplejs.html webpage with all the VIDEO FLAC Abilities (except O and C)
+So let's update this simplejs.html webpage with more of the VIDEO FLAC coding abilities
 
 V variables  
 I input output  
@@ -103,25 +103,31 @@ A Arrays (numbered variables)
 C Classes (all the above as one thing)  
 
 
-Can you add arrays, objects and classes. (Yeh that is really advanced)
 
 Code update called ```betterjs.html```
 
 ```
-        <input type="text" value="7" id="myText">  <!- For input -->
+<script>
+function myMain(){   // a funtion definition
+   let myTemp = ''  // an empty variable
+   let myValue = parseInt(document.getElementById('myText').value);  // input to a variable
+   for (myLoop =0; myLoop < myValue; myLoop++){   // Loop
+      if (myLoop > 4) {   // Decision
+         myTemp += myLoop + '<br>'
+      }   
+   }
+   document.getElementById('myDiv').innerHTML = myTemp;  // Output to a webpage element         
+}
+</script>
 
-        <div id="myDiv">...</div>   <!- For output -->
 
-        <input type="button" value="in-out" onclick="{  // event
-          let myTemp = ''  // an empty variable
-          let myValue = parseInt(document.getElementById('myText').value);  // input to a variable
-          for (myLoop =0; myLoop < myValue; myLoop++){   // Loop
-              if (myLoop > 4) {   // Decision
-                   myTemp += myLoop + '<br>'
-              }   
-          }
-          document.getElementById('myDiv').innerHTML = myTemp;  // Output to a webpage element
-        }">
+<input type="text" value="7" id="myText"> 
+
+<div id="myDiv">...</div>  
+
+<input type="button" value="in-out" onclick="{  // event definition
+    myMain()  // function activation
+}"><br>
 
 
 The only thing missing from this code is Objects, Arrays and Classes!
