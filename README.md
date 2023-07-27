@@ -122,6 +122,12 @@ The only thing missing from this code is Objects, Arrays and Classes!
 ```
 
 
+Thursday / Friday camp vision deployment to WASM on a webpage. Basically click edgeimpuls deployment, choose WASM download it, unzip it and drag the folder into your public folder on Github.
 
+Main Tutorial Link   https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/
+
+The tutorial is for the Vision Classification example but I think it also works with the FOMO example.
+
+The download index.html file to replace the edgeimpulse unzipped folder index.html file is [here](https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone/tree/main/download)
 
 
