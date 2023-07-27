@@ -37,6 +37,10 @@ https://hpssjellis.github.io/my-examples-of-huggingfacejs/public/index.html
 
 or use http://huggingface.co/chat
 
+
+# TensorflowJS stuff I made years ago
+
+https://hpssjellis.github.io/beginner-tensorflowjs-examples-in-javascript/#tfjs-models
 .
 
 .
