@@ -144,7 +144,8 @@ Good luck. Start thinking about your Project for Friday.
 
 
 
-## Friday: Project or Regression. Basically with Linear Regression the labels are numbers and reflect the size of a sample. Easiest with vision classification.
+## Friday: Project or Regression. 
+Basically with Linear Regression the labels are numbers and reflect the size of a sample. Easiest with vision classification.
 
 
 
