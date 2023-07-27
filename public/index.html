@@ -1,3 +1,56 @@
+<body onload="maxCounter()">
+
+<p>The number of people who have visited this page is:</p>
+<span id="counter"></span>
+<script>
+// Get the current number of users.
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "counter.txt", false);
+xhr.onload = function() {
+  var counter = xhr.responseText;
+  document.getElementById("counter").innerHTML = counter;
+};
+xhr.send();
+
+// Increment the number of users and update the counter.
+function incrementCounter() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("PUT", "counter.txt", false);
+  xhr.setRequestHeader("Content-Type", "text/plain");
+  xhr.send(String(parseInt(counter) + 1));
+
+  // Update the counter.
+  document.getElementById("counter").innerHTML = parseInt(counter) + 1;
+}
+
+
+
+  
+function maxCounter(){
+
+    try {
+    const response = await fetch('myCounter.txt', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'text/plain'
+      },
+      body: String(parseInt(counter) + 1)
+    });
+
+    if (response.ok) {
+      document.getElementById("counter").innerHTML = parseInt(counter) + 1;
+    } else {
+      throw new Error(`Error updating counter: ${response.status} ${response.statusText}`);
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+}
+  
+</script>
+
 Main Index by Jeremy <br>
 
 <li><a href="..">...</a>
