@@ -158,5 +158,25 @@ Basically with Linear Regression the labels are numbers and reflect the size of 
 
 
 
+Max try this
 
+```async function updateCounter() {
+  try {
+    const response = await fetch('counter.txt', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'text/plain'
+      },
+      body: String(parseInt(counter) + 1)
+    });
+
+    if (response.ok) {
+      document.getElementById("counter").innerHTML = parseInt(counter) + 1;
+    } else {
+      throw new Error(`Error updating counter: ${response.status} ${response.statusText}`);
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}```
 
