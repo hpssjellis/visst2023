@@ -147,7 +147,7 @@ The tutorial is for the Vision Classification example but I think it also works 
 The download index.html file to replace the edgeimpulse unzipped folder index.html file for vision - classification  [here](https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone/tree/main/download)
 
 
-Try this one for FOMO  [download-fomo/index.html](download-fomo/index.html)
+Try this one for FOMO  [download-fomo](download-fomo)
 
 Good luck. Start thinking about your Project for Friday.
 
