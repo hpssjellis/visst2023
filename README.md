@@ -12,22 +12,26 @@ Links you might find interesting
 
 For the motion assignment you can use your cell phone accelerometer and this static webpage I made here is the main index
 
-https://hpssjellis.github.io/tinyMLjs/public/index.html
+# My Profile Github Page
 
-here is the best motion page 
+https://github.com/hpssjellis
+
+# tinyMLjs
 
 https://hpssjellis.github.io/tinyMLjs/public/acceleration/a00-best-acceleration.html
 
 
 
-My grade 12 computer programming in javascript page
+# Javascript programming course Grade 11-12
 
 https://github.com/hpssjellis/high-school-javascript-game-dev-assignment-images
 
-My Robtos course
+# Robotics Course Grade 11-12  
+
 https://github.com/hpssjellis/maker100
 
-My Huggingface examples
+
+# Huggingface examples
 
 https://hpssjellis.github.io/my-examples-of-huggingfacejs/public/index.html
 
@@ -38,7 +42,7 @@ or use http://huggingface.co/chat
 .
 
 
-.
+## Students who have sent their URL as an issue
 
 ### Arush    https://arushyadavilli.github.io/visst-2023/public/index.html
 
@@ -59,7 +63,7 @@ or use http://huggingface.co/chat
 
 
 
-Lincoln's code
+### Lincoln's code
 
 ```
 <!DOCTYPE html>
@@ -83,6 +87,8 @@ Lincoln's code
 
 
 
+# Thursday coding
+
 So let's update this simplejs.html webpage with all the VIDEO FLAC Abilities (except O and C)
 
 V variables  
@@ -97,6 +103,7 @@ A Arrays (numbered variables)
 C Classes (all the above as one thing)  
 
 
+Can you add arrays, objects and classes. (Yeh that is really advanced)
 
 Code update called ```betterjs.html```
 
@@ -122,12 +129,24 @@ The only thing missing from this code is Objects, Arrays and Classes!
 ```
 
 
-Thursday / Friday camp vision deployment to WASM on a webpage. Basically click edgeimpuls deployment, choose WASM download it, unzip it and drag the folder into your public folder on Github.
+## Thursday / Friday camp vision deployment to WASM on a webpage. 
+
+Basically click edgeimpules deployment, choose WASM, download it, unzip it and drag the entire unzipped folder into your public folder on Github.
+On your index page make a link to the folder
 
 Main Tutorial Link   https://hpssjellis.github.io/multi-language-edgeimpulse-tutorial-vision-cell-phone/
 
 The tutorial is for the Vision Classification example but I think it also works with the FOMO example.
 
 The download index.html file to replace the edgeimpulse unzipped folder index.html file is [here](https://github.com/hpssjellis/multi-language-edgeimpulse-tutorial-vision-cell-phone/tree/main/download)
+
+Good luck. Start thinking about your Project for Friday.
+
+
+
+## Friday: Project or Regression. Basically with Linear Regression the labels are numbers and reflect the size of a sample. Easiest with vision classification.
+
+
+
 
 
