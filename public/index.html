@@ -1,17 +1,60 @@
-Main Index by Jeremy <br>
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <title>Main Index</title>
+    <style> 
+    body {
+  background-image: url("https://www.publicdomainpictures.net/pictures/110000/velka/snowcapped-mountains-in-wyoming.jpg");
+}
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+    </style>
+
+</head>
+<body onload="readAndIncrementCount()">
+
+	<p>The current amout of people that have visited the page is: <span id="counter">0</span></p>
+
+</body>
+</html> Main Index by Jeremy </h1> <hr> 
+
+<p>The number of people who have visited this page is:</p>
+<span id="counter"></span>
+<script>
+// Get the current number of users.
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "counter.txt", false);
+xhr.onload = function() {
+  var counter = xhr.responseText;
+  document.getElementById("counter").innerHTML = counter;
+};
+xhr.send();
+
+// Increment the number of users and update the counter.
+function incrementCounter() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("PUT", "counter.txt", false);
+  xhr.setRequestHeader("Content-Type", "text/plain");
+  xhr.send(String(parseInt(counter) + 1));
+
+  // Update the counter.
+  document.getElementById("counter").innerHTML = parseInt(counter) + 1;
+}
+
+
+</script>
+<br>
 
 <li><a href="..">...</a>
   
 <li><a href="http://www.google.ca">Google.ca</a>
   
 <li><a href="betterjs.html">betterjs.html</a>
-<li><a href="https://github.com/hpssjellis/visst2023/tree/main"> Main Github at: https://github.com/hpssjellis/visst2023</a>
+<li><a href="https://github.com/hpssjellis/visst2023/tree/main"> Main Github</a>
 <li><a href="hugchat.html">hugchat.html</a>
-<li><a href="..">...</a>
-<li><a href="..">...</a>
-<li><a href="..">...</a>
-<li><a href="..">...</a>
-<li><a href="..">...</a>
-<li><a href="..">...</a>
-<li><a href="..">...</a>
-<li><a href="..">...</a>
+
+
+  </body>
+</HTML>
+
