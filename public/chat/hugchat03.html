@@ -1,15 +1,15 @@
 
 <script>
 async function huggingchat(mySentPrompt, mySentID){   
-  document.getElementById('myDiv').innerHTML = await  myHug(mySentPrompt, mySentID)  // HOW TO SEND THIS DATA AND GET A REPLY
+  document.getElementById('myOutput').innerHTML = await  myHug(mySentPrompt, mySentID)  // HOW TO SEND THIS DATA AND GET A REPLY
 }
 </script>
 
-<h6> version 0.1.0-3</h6>
+<h6> version 0.1.2-4</h6>
 Prompt: <input type="text" value="Draw an ASCII dog" id="myPrompt"> <br>
 Token ID(optional): <input type="password" value="" id="myTokenID"> <br>
 
-Output: <div id="myDiv">...</div>  
+Output: <span id="myOutput">...</span>  
 
 <input type="button" value="Huggingface Chat" onclick="{  
    let myPrompt = parseInt(document.getElementById('myPrompt').value);  
