@@ -174,7 +174,9 @@ https://hpssjellis.github.io/my-examples-of-huggingfacejs/public/chat/hugchat00.
 
 
 
+Form to fill out
 
+https://forms.gle/7vTpMeXeLmrtcRyUA
 
 
 
