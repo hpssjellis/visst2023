@@ -1,0 +1,36 @@
+<body onload="readAndIncrementCount()">
+  <p>The current amount of people that have visited the page is: <span id="counter">0</span></p>
+</body>
+</html>
+
+<script>
+  // Function to read the current count from the server and update the UI
+  async function readAndIncrementCount() {
+    try {
+      const response = await fetch('counter.txt');
+      const counter = await response.text();
+      document.getElementById("counter").innerHTML = counter;
+      // Increment the counter and update the UI
+      await incrementCounter(counter);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  // Function to increment the counter and update the UI
+  async function incrementCounter(counter) {
+    try {
+      const response = await fetch('counter.txt', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'text/plain'
+        },
+        body: String(counter + 1)
+      });
+      await response.text();
+      document.getElementById("counter").innerHTML = counter + 1;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+</script>
