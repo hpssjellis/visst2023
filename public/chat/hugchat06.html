@@ -15,10 +15,10 @@
 				running = true;
 				try {
 					const hf = new HfInference(
-						document.getElementById("token").value.trim() || undefined
+						document.getElementById("myTokenID").value.trim() || undefined
 					);
-					const model = document.getElementById("model").value.trim();
-					const prompt = document.getElementById("prompt").value.trim();
+					const model = document.getElementById("model").value.trim();  // set this
+					const prompt = document.getElementById("myPrompt").value.trim();
 					document.getElementById("logs").textContent = "";
 					for await (const output of hf.textGenerationStream({
 						model,
@@ -27,7 +27,7 @@
 					}, {
 						use_cache: false
 					})) {
-						document.getElementById("logs").textContent += output.token.text;
+						document.getElementById("myOutput").textContent += output.token.text;
 					}
 				} catch (err) {
 					alert("Error: " + err.message);
