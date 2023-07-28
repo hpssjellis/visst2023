@@ -167,6 +167,12 @@ Huggingface chat that we can control
 
 https://huggingface.co/spaces/huggingfacejs/streaming-text-generation
 
+I will try to simplify it here
+
+https://hpssjellis.github.io/my-examples-of-huggingfacejs/public/chat/hugchat00.html
+
+
+
 
 
 
