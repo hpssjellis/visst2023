@@ -1,0 +1,28 @@
+<body onload="readAndIncrementCount()">
+  <p>The current amount of people that have visited the page is: <span id="counter">0</span></p>
+</body>
+</html>
+
+<script>
+  // Function to read the current count from the server and update the UI
+  function readAndIncrementCount() {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "counter.txt", false);
+    xhr.onload = function() {
+      const counter = parseInt(xhr.responseText);
+      document.getElementById("counter").innerHTML = counter;
+      // Increment the counter and update the UI
+      incrementCounter(counter);
+    };
+    xhr.send();
+  }
+
+  // Function to increment the counter and update the UI
+  function incrementCounter(counter) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("PUT", "counter.txt", false);
+    xhr.setRequestHeader("Content-Type", "text/plain");
+    xhr.send(String(counter + 1));
+    document.getElementById("counter").innerHTML = counter + 1;
+  }
+</script>
