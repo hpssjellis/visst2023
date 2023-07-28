@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script>
+			if (
+				localStorage.theme === "dark" ||
+				(!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+			) {
+				document.documentElement.classList.add("dark");
+			}
+
+			// For some reason, Sveltekit doesn't let us load env variables from .env here, so we load it from hooks.server.ts
+			window.gaId = "G-8Q63TH4CSL";
+			window.gaIdDeprecated = "UA-83738774-2";
+		</script>
+		
+		<link href="./_app/immutable/assets/_layout.fb360b1c.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/pendingMessage.d0635d6c.css" rel="stylesheet"><title>HuggingChat</title><!-- HEAD_svelte-7mp0s2_START --><meta name="description" content="The first open source alternative to ChatGPT. 💪"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@huggingface"><meta property="og:title" content="HuggingChat"><meta property="og:type" content="website"><meta property="og:url" content="https://huggingface.co/chat"><meta property="og:image" content="https://huggingface.co/chat/huggingchat/thumbnail.png"><link rel="icon" href="https://huggingface.co/chat/huggingchat/favicon.svg" type="image/svg+xml"><link rel="icon" href="https://huggingface.co/chat/huggingchat/favicon.png" type="image/png"><link rel="apple-touch-icon" href="https://huggingface.co/chat/huggingchat/touch-icon-ipad-retina.png" sizes="167x167" type="image/png"><link rel="apple-touch-icon" href="https://huggingface.co/chat/huggingchat/touch-icon-ipad.png" sizes="152x152" type="image/png"><link rel="apple-touch-icon" href="https://huggingface.co/chat/huggingchat/touch-icon-iphone-retina.png" sizes="180x180" type="image/png"><!-- HEAD_svelte-7mp0s2_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover" class="h-full dark:bg-gray-900">
+		<div id="app" class="contents h-full">
+
+
+
+
+<div class="grid h-full w-screen grid-cols-1 grid-rows-[auto,1fr] overflow-hidden text-smd dark:text-gray-300 md:grid-cols-[280px,1fr] md:grid-rows-[1fr]"><nav class="flex h-12 items-center justify-between border-b bg-gray-50 px-4 dark:border-gray-800 dark:bg-gray-800/70 md:hidden"><button type="button" class="-ml-3 flex h-9 w-9 shrink-0 items-center justify-center" aria-label="Open menu"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em"><!-- HTML_TAG_START --><path fill="currentColor" d="M6 6h20v2H6zm0 6h20v2H6zm0 6h20v2H6zm0 6h20v2H6z"/><!-- HTML_TAG_END --></svg></button>
+	<span class="truncate px-4">New Chat</span>
+	<a href="/chat/" class="-mr-3 flex h-9 w-9 shrink-0 items-center justify-center"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em"><!-- HTML_TAG_START --><path fill="currentColor" d="M17 15V8h-2v7H8v2h7v7h2v-7h7v-2z"/><!-- HTML_TAG_END --></svg></a></nav>
+<nav class="fixed inset-0 z-30 grid max-h-screen grid-cols-1 grid-rows-[auto,auto,1fr,auto] bg-white bg-gradient-to-l from-gray-50 dark:bg-gray-900 dark:from-gray-800/30 hidden"><div class="flex h-12 items-center px-4"><button type="button" class="-mr-3 ml-auto flex h-9 w-9 items-center justify-center" aria-label="Close menu"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em"><!-- HTML_TAG_START --><path fill="currentColor" d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"/><!-- HTML_TAG_END --></svg></button></div>
+	<div class="sticky top-0 flex flex-none items-center justify-between px-3 py-3.5 max-sm:pt-0"><a class="flex items-center rounded-xl text-lg font-semibold" href="https://huggingface.co/chat/"><object class="mr-1" data="https://huggingface.co/chat/huggingchat/favicon.svg" title="HuggingChat logo"></object>
+		HuggingChat</a>
+	<a href="/chat/" class="flex rounded-lg border bg-white px-2 py-0.5 text-center shadow-sm hover:shadow-none dark:border-gray-600 dark:bg-gray-700">New Chat
+	</a></div>
+<div class="scrollbar-custom flex flex-col gap-1 overflow-y-auto rounded-r-xl bg-gradient-to-l from-gray-50 px-3 pb-3 pt-2 dark:from-gray-800/30"><a data-sveltekit-noscroll href="/chat/conversation/64c312210f7e77e7aaac8caf" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here's a summary of the code in a single sentence of less than 5 words:
+
+Javascript code for reading and updating a counter.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64c1f47186693e4fc6941483" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here's a possible summary:
+
+"Seeking info on tinyML4D meetup."</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64c09d5fa81c4448881f273a" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here's a possible summary:
+
+Convert TensorFlow.js to Keras.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64c06f4686693e4fc693efc9" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here are three social media post ideas that you can use to promote tinyMLjs:
+
+1. "TinyMLjs: Machine Learning for Microcontrollers Made Easy!" #tinymljs #machinelearning #microcontrollers
+2. "Unlock the Power of Machine Learning on Your Microcontroller with TinyMLjs" #iot #machinelearning #embeddedsystems
+3. "Get Started with TinyMLjs - The Perfect Solution for ML on Microcontrollers" #machinelearning #microcontrollers #iotdevices</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64bf508450bda50e61c9245b" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 You're teaching machine learning in Vancouver!</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64bf3c599a322fd82639d523" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 I can assist with music notation.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64bf3c2aee0346d99e04bece" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 I understand Keyfree Music Notation.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a></div>
+<div class="mt-0.5 flex flex-col gap-1 rounded-r-xl bg-gradient-to-l from-gray-50 p-3 text-sm dark:from-gray-800/30"><form action="/chat/logout" method="post" class="group flex items-center gap-1.5 rounded-lg pl-3 pr-2 hover:bg-gray-100 dark:hover:bg-gray-700"><span class="flex h-9 flex-none shrink items-center gap-1.5 truncate pr-2 text-gray-500 dark:text-gray-400">rocksetta</span>
+			<button type="submit" class="ml-auto h-6 flex-none items-center gap-1.5 rounded-md border bg-white px-2 text-gray-700 shadow-sm group-hover:flex hover:shadow-none dark:border-gray-600 dark:bg-gray-600 dark:text-gray-400 dark:hover:text-gray-300 md:hidden">Sign Out
+			</button></form>
+	<button type="button" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">Theme
+	</button>
+	<button type="button" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">Settings
+	</button>
+	<a href="https://huggingface.co/spaces/huggingchat/chat-ui/discussions" target="_blank" rel="noreferrer" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">Feedback
+		</a>
+		<a href="/chat/privacy" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">About &amp; Privacy
+		</a></div></nav>
+	<nav class="grid max-h-screen grid-cols-1 grid-rows-[auto,1fr,auto] max-md:hidden"><div class="sticky top-0 flex flex-none items-center justify-between px-3 py-3.5 max-sm:pt-0"><a class="flex items-center rounded-xl text-lg font-semibold" href="https://huggingface.co/chat/"><object class="mr-1" data="https://huggingface.co/chat/huggingchat/favicon.svg" title="HuggingChat logo"></object>
+		HuggingChat</a>
+	<a href="/chat/" class="flex rounded-lg border bg-white px-2 py-0.5 text-center shadow-sm hover:shadow-none dark:border-gray-600 dark:bg-gray-700">New Chat
+	</a></div>
+<div class="scrollbar-custom flex flex-col gap-1 overflow-y-auto rounded-r-xl bg-gradient-to-l from-gray-50 px-3 pb-3 pt-2 dark:from-gray-800/30"><a data-sveltekit-noscroll href="/chat/conversation/64c312210f7e77e7aaac8caf" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here's a summary of the code in a single sentence of less than 5 words:
+
+Javascript code for reading and updating a counter.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64c1f47186693e4fc6941483" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here's a possible summary:
+
+"Seeking info on tinyML4D meetup."</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64c09d5fa81c4448881f273a" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here's a possible summary:
+
+Convert TensorFlow.js to Keras.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64c06f4686693e4fc693efc9" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 Sure! Here are three social media post ideas that you can use to promote tinyMLjs:
+
+1. "TinyMLjs: Machine Learning for Microcontrollers Made Easy!" #tinymljs #machinelearning #microcontrollers
+2. "Unlock the Power of Machine Learning on Your Microcontroller with TinyMLjs" #iot #machinelearning #embeddedsystems
+3. "Get Started with TinyMLjs - The Perfect Solution for ML on Microcontrollers" #machinelearning #microcontrollers #iotdevices</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64bf508450bda50e61c9245b" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 You're teaching machine learning in Vancouver!</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64bf3c599a322fd82639d523" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 I can assist with music notation.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a><a data-sveltekit-noscroll href="/chat/conversation/64bf3c2aee0346d99e04bece" class="group flex h-11 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 "><div class="flex-1 truncate">
+		 I understand Keyfree Music Notation.</div>
+
+	<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Edit conversation title"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M2 26h28v2H2zM25.4 9c.8-.8.8-2 0-2.8l-3.6-3.6c-.8-.8-2-.8-2.8 0l-15 15V24h6.4l15-15zm-5-5L24 7.6l-3 3L17.4 7l3-3zM6 22v-3.6l10-10l3.6 3.6l-10 10H6z"/><!-- HTML_TAG_END --></svg></button>
+
+		<button type="button" class="flex h-5 w-5 items-center justify-center rounded md:hidden md:group-hover:flex" title="Delete conversation"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-400  hover:text-gray-500 dark:hover:text-gray-300"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 12h2v12h-2zm6 0h2v12h-2z"/><path fill="currentColor" d="M4 6v2h2v20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8h2V6zm4 22V8h16v20zm4-26h8v2h-8z"/><!-- HTML_TAG_END --></svg></button></a></div>
+<div class="mt-0.5 flex flex-col gap-1 rounded-r-xl bg-gradient-to-l from-gray-50 p-3 text-sm dark:from-gray-800/30"><form action="/chat/logout" method="post" class="group flex items-center gap-1.5 rounded-lg pl-3 pr-2 hover:bg-gray-100 dark:hover:bg-gray-700"><span class="flex h-9 flex-none shrink items-center gap-1.5 truncate pr-2 text-gray-500 dark:text-gray-400">rocksetta</span>
+			<button type="submit" class="ml-auto h-6 flex-none items-center gap-1.5 rounded-md border bg-white px-2 text-gray-700 shadow-sm group-hover:flex hover:shadow-none dark:border-gray-600 dark:bg-gray-600 dark:text-gray-400 dark:hover:text-gray-300 md:hidden">Sign Out
+			</button></form>
+	<button type="button" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">Theme
+	</button>
+	<button type="button" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">Settings
+	</button>
+	<a href="https://huggingface.co/spaces/huggingchat/chat-ui/discussions" target="_blank" rel="noreferrer" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">Feedback
+		</a>
+		<a href="/chat/privacy" class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-3 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700">About &amp; Privacy
+		</a></div></nav>
+	
+	
+	
+	<div class="relative min-h-0 min-w-0">
+	<div class="scrollbar-custom mr-1 h-full overflow-y-auto"><div class="mx-auto flex h-full max-w-3xl flex-col gap-6 px-5 pt-6 sm:gap-8 xl:max-w-4xl"><div class="my-auto grid gap-8 lg:grid-cols-3"><div class="lg:col-span-1"><div><div class="mb-3 flex items-center text-2xl font-semibold"><object class="mr-1 flex-none" data="https://huggingface.co/chat/huggingchat/favicon.svg" title="HuggingChat logo"></object>
+				HuggingChat
+				<div class="ml-3 flex h-6 items-center rounded-lg border border-gray-100 bg-gray-50 px-2 text-base text-gray-400 dark:border-gray-700/60 dark:bg-gray-800">v0.4.0</div></div>
+			<p class="text-base text-gray-600 dark:text-gray-400">Making the community&#39;s best AI chat models available to everyone.
+			</p></div></div>
+	<div class="lg:col-span-2 lg:pl-24"><div class="flex items-center rounded-xl bg-gray-100 p-1 text-sm dark:bg-gray-800 mb-4"><span class="mr-2 inline-flex items-center rounded-lg bg-gradient-to-br from-primary-300 px-2 py-1 text-xxs font-medium uppercase leading-3 text-primary-700 dark:from-primary-900 dark:text-primary-400">New</span>
+	Llama v2 is live on HuggingChat! 🦙
+	<div class="ml-auto shrink-0"><a target="_blank" href="https://huggingface.co/blog/llama2" class="mr-2 flex items-center underline hover:no-underline"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="mr-1.5 text-xs"><!-- HTML_TAG_START --><path fill="currentColor" d="M10 6v2h12.59L6 24.59L7.41 26L24 9.41V22h2V6H10z"/><!-- HTML_TAG_END --></svg> Announcement</a>
+			</div></div>
+
+		
+		<div class="overflow-hidden rounded-xl border dark:border-gray-800"><div class="flex p-3"><div><div class="text-sm text-gray-600 dark:text-gray-400">Current Model</div>
+					<div class="font-semibold">meta-llama/Llama-2-70b-chat-hf</div></div>
+				<button type="button" class="btn ml-auto flex h-7 w-7 self-start rounded-full bg-gray-100 p-1 text-xs hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-600"><svg width="1em" height="1em" viewBox="0 0 15 6" class="" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.67236 1L7.67236 7L13.6724 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div>
+			<div class="flex items-center gap-5 rounded-xl bg-gray-100 px-3 py-2 text-sm text-gray-600 dark:bg-gray-800 dark:text-gray-300"><a href="https://huggingface.co/meta-llama/Llama-2-70b-chat-hf" target="_blank" rel="noreferrer" class="flex items-center hover:underline"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="mr-1.5 shrink-0 text-xs text-gray-400"><!-- HTML_TAG_START --><path fill="currentColor" d="M10 6v2h12.59L6 24.59L7.41 26L24 9.41V22h2V6H10z"/><!-- HTML_TAG_END --></svg>
+		Model
+		<div class="max-sm:hidden"> page</div></a>
+	<a href="https://huggingface.co/datasets/meta-llama/Llama-2-70b-chat-hf" target="_blank" rel="noreferrer" class="flex items-center hover:underline"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="mr-1.5 shrink-0 text-xs text-gray-400"><!-- HTML_TAG_START --><path fill="currentColor" d="M10 6v2h12.59L6 24.59L7.41 26L24 9.41V22h2V6H10z"/><!-- HTML_TAG_END --></svg>
+			Dataset
+			<div class="max-sm:hidden"> page</div></a>
+	<a href="https://ai.meta.com/llama/" target="_blank" class="ml-auto flex items-center hover:underline" rel="noreferrer"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="mr-1.5 shrink-0 text-xs text-gray-400"><!-- HTML_TAG_START --><path fill="currentColor" d="M16 2a14 14 0 1 0 14 14A14.016 14.016 0 0 0 16 2Zm5 3.106a12.014 12.014 0 0 1 2.916 1.899L23.503 8H21Zm-7.622 22.597A11.976 11.976 0 0 1 8.116 6.976L9.465 9h3.342l-1.5 4H7.28l-1.382 4.148L8.465 21h5l1.432 2.147ZM16 28c-.203 0-.402-.02-.603-.03l1.397-4.19a1.988 1.988 0 0 0-.233-1.741l-1.432-2.148A1.996 1.996 0 0 0 13.465 19h-3.93l-1.432-2.148L8.721 15H11v2h2v-2.819l2.936-7.83l-1.872-.702L13.557 7h-3.022l-.807-1.21A11.794 11.794 0 0 1 19 4.394V8a2.002 2.002 0 0 0 2 2h2.586A1.986 1.986 0 0 0 25 9.414l.14-.14l.282-.68A11.981 11.981 0 0 1 27.3 12h-4.701a1.993 1.993 0 0 0-1.972 1.665l-.597 3.441a1.99 1.99 0 0 0 .991 2.086l2.165 1.464l1.458 3.646A11.958 11.958 0 0 1 16 28Zm8.815-8.656L22.1 17.509l-.1-.06l.599-3.449h5.22a11.743 11.743 0 0 1-1.744 8.495Z"/><!-- HTML_TAG_END --></svg>
+			Website
+		</a></div></div></div>
+	<div class="lg:col-span-3 lg:mt-12"><p class="mb-3 text-gray-600 dark:text-gray-300">Examples</p>
+			<div class="grid gap-3 lg:grid-cols-3 lg:gap-5"><button type="button" class="rounded-xl border bg-gray-50 p-2.5 text-gray-600 hover:bg-gray-100 dark:border-gray-800 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 sm:p-4">Write an email from bullet list
+					</button><button type="button" class="rounded-xl border bg-gray-50 p-2.5 text-gray-600 hover:bg-gray-100 dark:border-gray-800 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 sm:p-4">Code a snake game
+					</button><button type="button" class="rounded-xl border bg-gray-50 p-2.5 text-gray-600 hover:bg-gray-100 dark:border-gray-800 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 sm:p-4">Assist in a task
+					</button></div></div></div>
+		
+		<div class="h-44 flex-none"></div></div>
+	</div>
+	<div class="dark:via-gray-80 pointer-events-none absolute inset-x-0 bottom-0 z-0 mx-auto flex w-full max-w-3xl flex-col items-center justify-center bg-gradient-to-t from-white via-white/80 to-white/0 px-3.5 py-4 dark:border-gray-800 dark:from-gray-900 dark:to-gray-900/0 max-md:border-t max-md:bg-white max-md:dark:bg-gray-900 sm:px-5 md:py-8 xl:max-w-4xl [&>*]:pointer-events-auto"><div class="flex w-full pb-3 max-md:justify-between"><div class="flex h-9 cursor-pointer select-none items-center gap-2 rounded-xl border bg-white p-1.5 shadow-sm hover:shadow-none dark:border-gray-800 dark:bg-gray-900"><input type="checkbox" name="useSearch" class="peer pointer-events-none absolute opacity-0">
+<div class="relative inline-flex h-5 w-9 shrink-0 items-center rounded-full bg-gray-300 p-1 shadow-inner ring-gray-400 transition-all peer-checked:bg-blue-600 peer-focus-visible:ring peer-focus-visible:ring-offset-1 hover:bg-gray-400 dark:bg-gray-600 peer-checked:[&>div]:translate-x-3.5"><div class="h-3.5 w-3.5 rounded-full bg-white shadow-sm transition-all"></div></div>
+	<div class="whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Search web</div>
+	<div class="group relative w-max"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em" class="text-xs text-gray-500"><!-- HTML_TAG_START --><path fill="currentColor" d="M17 22v-8h-4v2h2v6h-3v2h8v-2h-3zM16 8a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 16 8z"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14Zm0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4Z"/><!-- HTML_TAG_END --></svg>
+		<div class="pointer-events-none absolute -top-20 left-1/2 w-max -translate-x-1/2 rounded-md bg-gray-100 p-2 opacity-0 transition-opacity group-hover:opacity-100 dark:bg-gray-800"><p class="max-w-sm text-sm text-gray-800 dark:text-gray-200">When enabled, the model will try to complement its answer with information queried from the
+				web.
+			</p></div></div></div>
+			</div>
+		<form class="relative flex w-full max-w-4xl flex-1 items-center rounded-xl border bg-gray-100 focus-within:border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:focus-within:border-gray-500 "><div class="flex w-full flex-1 border-none bg-transparent">
+
+<div class="relative min-w-0 flex-1"><pre class="scrollbar-custom invisible overflow-x-hidden overflow-y-scroll whitespace-pre-wrap break-words p-3 svelte-jxi03l" aria-hidden="true" style="min-height: 2.5em; max-height: 7em"> 
+</pre>
+
+	<textarea enterkeyhint="send" tabindex="0" rows="1" class="scrollbar-custom absolute top-0 m-0 h-full w-full resize-none scroll-p-3 overflow-x-hidden overflow-y-scroll border-0 bg-transparent p-3 outline-none focus:ring-0 focus-visible:ring-0 svelte-jxi03l"  placeholder="Ask anything"></textarea>
+</div>
+
+				<button class="btn mx-1 my-1 h-[2.4rem] self-end rounded-lg bg-transparent p-1 px-[0.7rem] text-gray-400 disabled:opacity-60 enabled:hover:text-gray-700 dark:disabled:opacity-40 enabled:dark:hover:text-gray-100" disabled type="submit"><svg viewBox="0 0 32 32" width="1.2em" height="1.2em"><!-- HTML_TAG_START --><path fill="currentColor" d="M27.71 4.29a1 1 0 0 0-1.05-.23l-22 8a1 1 0 0 0 0 1.87l8.59 3.43L19.59 11L21 12.41l-6.37 6.37l3.44 8.59A1 1 0 0 0 19 28a1 1 0 0 0 .92-.66l8-22a1 1 0 0 0-.21-1.05Z"/><!-- HTML_TAG_END --></svg></button></div></form>
+		<div class="mt-2 flex justify-between self-stretch px-1 text-xs text-gray-400/90 max-sm:gap-2"><p>Model: <a href="https://huggingface.co/meta-llama/Llama-2-70b-chat-hf" target="_blank" rel="noreferrer" class="hover:underline">meta-llama/Llama-2-70b-chat-hf</a> <span class="max-sm:hidden">·</span><br class="sm:hidden"> Generated content may be inaccurate
+				or false.
+			</p>
+			</div></div></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_1u0sfrl = {
+						assets: "/chat",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [{"type":"data","data":{conversations:[{id:"64c312210f7e77e7aaac8caf",title:" Sure! Here's a summary of the code in a single sentence of less than 5 words:\n\nJavascript code for reading and updating a counter.",model:"meta-llama\u002FLlama-2-70b-chat-hf"},{id:"64c1f47186693e4fc6941483",title:" Sure! Here's a possible summary:\n\n\"Seeking info on tinyML4D meetup.\"",model:"meta-llama\u002FLlama-2-70b-chat-hf"},{id:"64c09d5fa81c4448881f273a",title:" Sure! Here's a possible summary:\n\nConvert TensorFlow.js to Keras.",model:"meta-llama\u002FLlama-2-70b-chat-hf"},{id:"64c06f4686693e4fc693efc9",title:" Sure! Here are three social media post ideas that you can use to promote tinyMLjs:\n\n1. \"TinyMLjs: Machine Learning for Microcontrollers Made Easy!\" #tinymljs #machinelearning #microcontrollers\n2. \"Unlock the Power of Machine Learning on Your Microcontroller with TinyMLjs\" #iot #machinelearning #embeddedsystems\n3. \"Get Started with TinyMLjs - The Perfect Solution for ML on Microcontrollers\" #machinelearning #microcontrollers #iotdevices",model:"meta-llama\u002FLlama-2-70b-chat-hf"},{id:"64bf508450bda50e61c9245b",title:" You're teaching machine learning in Vancouver!",model:"meta-llama\u002FLlama-2-70b-chat-hf"},{id:"64bf3c599a322fd82639d523",title:" I can assist with music notation.",model:"meta-llama\u002FLlama-2-70b-chat-hf"},{id:"64bf3c2aee0346d99e04bece",title:" I understand Keyfree Music Notation.",model:"meta-llama\u002FLlama-2-70b-chat-hf"}],settings:{shareConversationsWithModelAuthors:true,ethicsModalAcceptedAt:new Date(1690254408670),activeModel:"meta-llama\u002FLlama-2-70b-chat-hf",searchEnabled:true},models:[{id:"meta-llama\u002FLlama-2-70b-chat-hf",name:"meta-llama\u002FLlama-2-70b-chat-hf",websiteUrl:"https:\u002F\u002Fai.meta.com\u002Fllama\u002F",modelUrl:void 0,datasetName:"meta-llama\u002FLlama-2-70b-chat-hf",datasetUrl:void 0,displayName:"meta-llama\u002FLlama-2-70b-chat-hf",description:"The latest and biggest model from Meta, fine-tuned for chat.",promptExamples:[{title:"Write an email from bullet list",prompt:"As a restaurant owner, write a professional email to the supplier to get these products every week: \n\n- Wine (x10)\n- Eggs (x24)\n- Bread (x12)"},{title:"Code a snake game",prompt:"Code a basic snake game in python, give explanations for each step."},{title:"Assist in a task",prompt:"How do I make a delicious lemon cheesecake?"}],parameters:{temperature:.1,truncate:1000,max_new_tokens:1024,top_p:.95,repetition_penalty:1.2,top_k:50}},{id:"OpenAssistant\u002Foasst-sft-6-llama-30b-xor",name:"OpenAssistant\u002Foasst-sft-6-llama-30b-xor",websiteUrl:"https:\u002F\u002Fopen-assistant.io",modelUrl:void 0,datasetName:"OpenAssistant\u002Foasst1",datasetUrl:void 0,displayName:"OpenAssistant\u002Foasst-sft-6-llama-30b",description:"A good alternative to ChatGPT",promptExamples:[{title:"Write an email from bullet list",prompt:"As a restaurant owner, write a professional email to the supplier to get these products every week: \n\n- Wine (x10)\n- Eggs (x24)\n- Bread (x12)"},{title:"Code a snake game",prompt:"Code a basic snake game in python, give explanations for each step."},{title:"Assist in a task",prompt:"How do I make a delicious lemon cheesecake?"}],parameters:{temperature:.2,truncate:1000,max_new_tokens:1024,stop:["\u003C\u002Fs\u003E"],top_p:.95,repetition_penalty:1.2,top_k:50}}],oldModels:[{name:"bigcode\u002Fstarcoder",id:"bigcode\u002Fstarcoder",displayName:"bigcode\u002Fstarcoder"}],user:{username:"rocksetta",avatarUrl:"https:\u002F\u002Faeiljuispo.cloudimg.io\u002Fv7\u002Fhttps:\u002F\u002Fcdn-uploads.huggingface.co\u002Fproduction\u002Fuploads\u002F1678322136363-6408eb97bf3e9a4bb2e0afdb.jpeg?w=200&h=200&f=face",email:null},requiresLogin:true,messagesBeforeLogin:1},"uses":{"dependencies":["conversation:list"],"url":1}},null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.f725622b.js"),
+						import("./_app/immutable/entry/app.49835b27.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+
+		<!-- Google Tag Manager -->
+		<script>
+			if (window.gaId) {
+				const script = document.createElement("script");
+				script.src = "https://www.googletagmanager.com/gtag/js?id=" + window.gaId;
+				script.async = true;
+				document.head.appendChild(script);
+
+				window.dataLayer = window.dataLayer || [];
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+				gtag("js", new Date());
+				/// ^ See https://developers.google.com/tag-platform/gtagjs/install
+				gtag("config", window.gaId);
+				gtag("consent", "default", { ad_storage: "denied", analytics_storage: "denied" });
+				/// ^ See https://developers.google.com/tag-platform/gtagjs/reference#consent
+				/// TODO: ask the user for their consent and update this with gtag('consent', 'update')
+			}
+		</script>
+
+		<!-- Google Analytics v3 (deprecated on 1 July 2023) -->
+		<script>
+			if (window.gaIdDeprecated) {
+				(function (i, s, o, g, r, a, m) {
+					i["GoogleAnalyticsObject"] = r;
+					(i[r] =
+						i[r] ||
+						function () {
+							(i[r].q = i[r].q || []).push(arguments);
+						}),
+						(i[r].l = 1 * new Date());
+					(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m);
+				})(
+					window,
+					document,
+					"script",
+					"https://www.google-analytics.com/analytics.js",
+					"ganalytics"
+				);
+				ganalytics("create", window.gaIdDeprecated, "auto");
+				ganalytics("send", "pageview");
+			}
+		</script>
+	</body>
+</html>
