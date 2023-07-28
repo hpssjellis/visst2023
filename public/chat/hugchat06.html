@@ -17,7 +17,7 @@
 					const hf = new HfInference(
 						document.getElementById("myTokenID").value.trim() || undefined
 					);
-					const model = document.getElementById("model").value.trim();  // set this
+					const model = "meta-llama/Llama-2-70b-chat-hf";  //document.getElementById("model").value.trim();  // set this
 					const prompt = document.getElementById("myPrompt").value.trim();
 					document.getElementById("logs").textContent = "";
 					for await (const output of hf.textGenerationStream({
@@ -41,7 +41,8 @@
 
 <script>
 async function huggingchat(mySentPrompt, mySentID){   
-  document.getElementById('myOutput').innerHTML = await  myHug(mySentPrompt, mySentID)  // HOW TO SEND THIS DATA AND GET A REPLY
+ // document.getElementById('myOutput').innerHTML = await  myHug(mySentPrompt, mySentID)  // HOW TO SEND THIS DATA AND GET A REPLY
+   launch() 
 }
 </script>
 
