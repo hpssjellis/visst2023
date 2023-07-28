@@ -17,7 +17,7 @@
 					const hf = new HfInference(
 						document.getElementById("myTokenID").value.trim() || undefined
 					);
-					const model = "meta-llama/Llama-2-70b-chat-hf";  //document.getElementById("model").value.trim();  // set this
+					const model = "meta-llama/Llama-2-7b-chat-hf";  //document.getElementById("model").value.trim();  // set this
 					const prompt = document.getElementById("myPrompt").value.trim();
 					document.getElementById("myOutput").textContent = "";
 					for await (const output of hf.textGenerationStream({
@@ -46,7 +46,7 @@ async function huggingchat(mySentPrompt, mySentID){
 }
 </script>
 
-<h6> version 0.1.3-6</h6>
+<h6> version 0.1.3-7</h6>
 Prompt: <input type="text" value="Draw an ASCII dog" id="myPrompt"> <br>
 Token ID(optional): <input type="password" value="" id="myTokenID"> <br>
 
