@@ -184,3 +184,14 @@ Max try this
   }
 }```
 
+
+
+Huggingface chat that we can control
+
+https://huggingface.co/spaces/huggingfacejs/streaming-text-generation
+
+
+
+
+
+
