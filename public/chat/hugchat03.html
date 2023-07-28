@@ -5,9 +5,9 @@ async function huggingchat(mySentPrompt, mySentID){
 }
 </script>
 
-<h6> version 0.0.l-1</h6>
-Prompt: <input type="text" value="Draw an ASCII dog" id="myPrompt"> 
-Token ID(optional): <input type="text" value="Draw an ASCII dog" id="myTokenID"> 
+<h6> version 0.1.0-2</h6>
+Prompt: <input type="text" value="Draw an ASCII dog" id="myPrompt"> <br>
+Token ID(optional): <input type="text" value="Draw an ASCII dog" id="myTokenID"> <br>
 
 Output: <div id="myDiv">...</div>  
 
@@ -15,4 +15,4 @@ Output: <div id="myDiv">...</div>
    let myPrompt = parseInt(document.getElementById('myPrompt').value);  
    let myID = parseInt(document.getElementById('myTokenID').value);  
    huggingchat(myPrompt, myID)
-}">
+}"> <br>
