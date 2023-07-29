@@ -162,21 +162,27 @@ Basically with Linear Regression the labels are numbers and reflect the size of 
 
 
 
+huggingface chat at http://huggingface.co/chat
 
-Huggingface chat that we can control
+Huggingface chat that we can control, there version
 
 https://huggingface.co/spaces/huggingfacejs/streaming-text-generation
 
-I will try to simplify it here
+I will try to simplify it here my version
 
 https://hpssjellis.github.io/my-examples-of-huggingfacejs/public/chat/hugchat00.html
 
+Note: As of today LLAMA-v2 is not available. I have putin an issue tofind what is the best one to use.
+
+
+This is the issue I have filed
+
+https://github.com/huggingface/huggingface.js/issues/223
 
 
 
-Form to fill out
 
-https://forms.gle/7vTpMeXeLmrtcRyUA
+
 
 
 
