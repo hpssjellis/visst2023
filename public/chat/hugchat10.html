@@ -39,9 +39,9 @@ if (running) {return;}
     //document.getElementById("myModel").innerHTML = `<b>${model}</b>`;
 		
     const prompt = document.getElementById("myPrompt").value.trim();
-    document.getElementById("myOutput").innerHTML = "";
+    document.getElementById("myOutput").textContent  = "";
     for await (const output of hf.textGenerationStream({model,inputs: prompt,parameters: { max_new_tokens: 250 }}, {use_cache: false})) {
-      document.getElementById("myOutput").innerHTML += output.token.text;
+      document.getElementById("myOutput").textContent  += output.token.text;
     }
   } catch (err) {
       alert("Error: " + err.message);
