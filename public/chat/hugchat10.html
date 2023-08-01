@@ -6,17 +6,21 @@
 </script>
 
 
-<h6> version 0.3.0-14</h6>
+<h6> version 0.4.0-15</h6>
 <h3 align=center>Hugginface single page Javascript Open Souce Chat</h3>
-Running model: <span id="myModel">...</span> <br>
-Prompt: <input type="text" value="What is a large language model" id="myPrompt"> <br>
-Token ID(faster): <input type="password" value="" id="myTokenID">  <a href="https://huggingface.co/settings/tokens"> token signup</a> <br>
 
-Output: <span id="myOutput">...</span> <br>
+Prompt: <textarea id="myPrompt" rows=10 cols=70>What is a large language model</textarea> <br>
+Token ID(faster): <input type="password" value="" id="myTokenID">  <a href="https://huggingface.co/settings/tokens"> token signup</a> <br>
+The Model: <input type="text" value="OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5" id="myModel">  <a href="https://huggingface.co/models?pipeline_tag=text2text-generation&sort=likes"> HF Models at</a> <br>
+
 
 <input type="button" value="Huggingface Chat" onclick="{  
    launch()
 }"> <br>
+
+Output: <span id="myOutput">...</span> <br>
+
+
 
 
 <script type="module">
@@ -30,8 +34,9 @@ if (running) {return;}
 	  
     // models at         https://huggingface.co/models?pipeline_tag=text2text-generation&sort=likes
     // some need a paid account
-    const model =  "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5"; //meta-llama/Llama-2-70b-chat-hf";  //document.getElementById("model").value.trim();  // set this
-    document.getElementById("myModel").innerHTML = `<b>${model}</b>`;
+    //const model =  "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5"; //meta-llama/Llama-2-70b-chat-hf";  //document.getElementById("model").value.trim();  // set this
+    const model =  "document.getElementById("model").value.trim();  // set the model
+    //document.getElementById("myModel").innerHTML = `<b>${model}</b>`;
 		
     const prompt = document.getElementById("myPrompt").value.trim();
     document.getElementById("myOutput").innerHTML = "";
