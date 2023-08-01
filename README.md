@@ -180,7 +180,7 @@ This is the issue I have filed
 https://github.com/huggingface/huggingface.js/issues/223
 
 
-
+If you are checking this site. huggingface chat is getting really interesting.
 
 
 
