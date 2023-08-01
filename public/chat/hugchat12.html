@@ -21,14 +21,14 @@ Prompt:<br>
  <a href="https://huggingface.co/models?pipeline_tag=text2text-generation&sort=likes"> HF Models at</a>. This Model: <input type="text" size=70 value="OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5" id="myModel">  <br>
 
 
-<input type="button" value="Huggingface Chat" onclick="{  
+<input type="button" value="Run Huggingface Chat" onclick="{  
    launch()
-}"> <br>
+}"> 
 
 <input type=button value="Convert MD to HTML" onClick="{
    let converter = new showdown.Converter()
    document.getElementById('myOutput').innerHTML    = converter.makeHtml(document.getElementById('myOutput').textContent)
-}">
+}"><br>
 Output: <span id="myOutput">...</span> <br>
 
 
