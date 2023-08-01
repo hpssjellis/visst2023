@@ -6,7 +6,9 @@ testing converting markdown exported from the model to html for the webpage
 
 <input type=button value=convert onClick="{
 
-  alert()
+var converter = new showdown.Converter(),
+    html      = converter.makeHtml('# hello, markdown!'),
+    md        = converter.makeMd('<a href="https://patreon.com/showdownjs">Please Support us!</a>');
 }">
 
 Output: <span id="myOutput">---
