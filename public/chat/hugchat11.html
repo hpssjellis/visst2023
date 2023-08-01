@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.js"></script> 
 
-v0.1.0-3<br>
+v0.1.1-4<br>
 
 testing converting markdown exported from the model to html for the webpage
 
@@ -12,6 +12,19 @@ let   myMd        = converter.makeMd('<a href=\'https://patreon.com/showdownjs\'
 console.log(myHTML)
 console.log(myMd)
 }">
+<br>
+<br>
+
+<input type=button value=Big onClick="{
+
+let converter = new showdown.Converter()
+document.getElementById('myOutput').innerHTML    = converter.makeHtml(document.getElementById('myOutput').textContent)
+
+}">
+<br>
+<br>
+
+
 
 Output: <span id="myOutput">---
 
