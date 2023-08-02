@@ -17,7 +17,7 @@
       document.getElementById('myTokenID').value = myStorage 
     }
 }">
-<h6> version 0.7.1-27</h6>
+<h6> version 0.7.1-28</h6>
 <h3 align=center>Hugginface single page Javascript Open Souce Chat</h3>
 
 Prompt:<input type="button" value="Clear Prompt" onclick="{  
@@ -65,7 +65,7 @@ if (running) {return;}
     const prompt = document.getElementById("myPromptAndInput").value.trim();
     document.getElementById("myOutputHtml").textContent  = "";
     for await (const output of hf.textGenerationStream({model,inputs: prompt,parameters: { 
-	    temperature: document.getElementById("myParamTemp").value,
+	    temperature: parseInt(document.getElementById("myParamTemp").value),
 	    top_p: 0.95,
 	    repetition_penalty: 1.2, 
 	    top_k: 50, 
