@@ -17,7 +17,7 @@
       document.getElementById('myTokenID').value = myStorage 
     }
 }">
-<h6> version 0.7.3-33</h6>
+<h6> version 0.7.3-34</h6>
 <h3 align=center>Hugginface single page Javascript Open Souce Chat</h3>
 
 Prompt:<input type="button" value="Clear Prompt" onclick="{  
@@ -38,7 +38,7 @@ Prompt:<input type="button" value="Clear Prompt" onclick="{
    launch()
 }"> 
 
-<input type=button value="Convert Output to HTML" onClick="{
+<input type=button value="Convert Chat Markdown to HTML" onClick="{
    let converter = new showdown.Converter()
    document.getElementById('myOutputHtml').innerHTML  = converter.makeHtml(document.getElementById('myPromptAndInput').value)
 }"><br>
