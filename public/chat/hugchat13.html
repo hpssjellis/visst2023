@@ -17,15 +17,17 @@
       document.getElementById('myEnteredToken').value = myStorage 
     }
 }">
-<h6> version 0.6.1-24</h6>
+<h6> version 0.6.2-23</h6>
 <h3 align=center>Hugginface single page Javascript Open Souce Chat</h3>
 
-Prompt:<br>
+Prompt:<input type="button" value="Clear Prompt" onclick="{  
+    document.getElementById('myPromptAndInput').value = ''
+}"> <br>
 <textarea id="myPromptAndInput" rows=10 cols=70>What is a large language model</textarea> <br>
  <a href="https://huggingface.co/settings/tokens"> Token Signup</a>, Token ID (faster): <input type="password" value="" id="myTokenID"> 
 <input type="button" value="Store Token Locally" onClick="{
    localStorage.setItem('myStoredToken', document.getElementById('myTokenID').value)
-   document.getElementById('myOutputHTML').innerHTML = 'Latest Token has been stored containing these last 4 characters: ' +
+   document.getElementById('myOutputHtml').innerHTML = 'Latest Token has been stored containing these last 4 characters: ' +
        document.getElementById('myTokenID').value.slice(-4)
 }"><br><br>
  <a href="https://huggingface.co/models?pipeline_tag=text2text-generation&sort=likes"> HF Models at</a>. This Model: <input type="text" size=70 value="OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5" id="myModel">  <br>
@@ -35,7 +37,7 @@ Prompt:<br>
    launch()
 }"> 
 
-<input type=button value="Convert Chat Markdown to HTML" onClick="{
+<input type=button value="Convert Output to HTML" onClick="{
    let converter = new showdown.Converter()
    document.getElementById('myOutputHtml').innerHTML  = converter.makeHtml(document.getElementById('myPromptAndInput').value)
 }"><br>
