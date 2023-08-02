@@ -17,7 +17,7 @@
       document.getElementById('myTokenID').value = myStorage 
     }
 }">
-<h6> version 0.6.3-24</h6>
+<h6> version 0.7.0-25</h6>
 <h3 align=center>Hugginface single page Javascript Open Souce Chat</h3>
 
 Prompt:<input type="button" value="Clear Prompt" onclick="{  
@@ -41,8 +41,8 @@ Prompt:<input type="button" value="Clear Prompt" onclick="{
    let converter = new showdown.Converter()
    document.getElementById('myOutputHtml').innerHTML  = converter.makeHtml(document.getElementById('myPromptAndInput').value)
 }"><br>
-Output: <span id="myOutputHtml">...</span> <br>
-
+HTML Output: <span id="myOutputHtml">...</span> <br>
+<input type="number" id="myParamTemp" placeholder="0.95" min="0.001" title="temperature: low=random, high=precise" max="1">
 
 
 
@@ -64,7 +64,12 @@ if (running) {return;}
     const prompt = document.getElementById("myPromptAndInput").value.trim();
     document.getElementById("myOutputHtml").textContent  = "";
     for await (const output of hf.textGenerationStream({model,inputs: prompt,parameters: { 
-	    max_new_tokens: 250 
+	    temperature: document.getElementById("myParamTemp").value,
+	    top_p: 0.95,, 
+	    repetition_penalty: 1.2, 
+	    top_k: 50, 
+	    truncate: 1000,
+	    max_new_tokens: 250
        }}, {use_cache: false})) {
       document.getElementById("myPromptAndInput").value += output.token.text;
      // document.getElementById("myOutputHtml").textContent  += output.token.text;
@@ -75,4 +80,15 @@ if (running) {return;}
     finally {running = false;}
   }
   window.launch = launch;
+
+/*
+      "temperature": 0.9,           // control the randomness of predictions
+      "top_p": 0.95,                    // control the range of tokens based on their cumulative probability
+      "repetition_penalty": 1.2,   // discounts the probability of tokens that already appeared 
+      "top_k": 50,                       // top list of number of words to choose from
+      "truncate": 1000,               // ?????
+      "max_new_tokens": 1024
+
+*/
+	
 </script>
